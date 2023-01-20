@@ -177,3 +177,22 @@ body {
 .info__content {
   flex-basis: 415px;
 }
+
+.info__table {
+  flex-basis: 450px;
+  border-bottom: 1px solid #040404;
+  position: relative;
+  top: 20px;
+}
+
+.info__table::before {
+  content: '';
+  border-top: 1px solid #040404;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+}
+
+.info__table td{
+  padding-bottom: 20px;
+}
