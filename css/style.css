@@ -30,8 +30,14 @@ body {
   font-weight: 400;
 }
 
-.container {
+.big-container {
   max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 920px;
   padding: 0 10px;
   margin: 0 auto;
 }
