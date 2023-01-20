@@ -132,14 +132,23 @@ body {
 .info__part {
   padding-top: 100px;
   display: flex;
+  justify-content: space-between;
 }
 
 .info__part--first {
   display: block;
 }
 
+.info__part--second .info__text {
+  min-width: 352px;
+}
+
 .info__part--third {
   padding-top: 66px;
+}
+
+.info__part--third .info__text {
+  min-width: 377px;
 }
 
 .info__title {
@@ -163,4 +172,8 @@ body {
 
 .info__part-img {
   object-fit: cover;
+}
+
+.info__content {
+  flex-basis: 415px;
 }
