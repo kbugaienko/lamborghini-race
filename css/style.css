@@ -608,6 +608,9 @@ body {
     display: block;
     margin: auto;
   }
+  .track__text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -641,10 +644,17 @@ body {
     max-width: 100%;
     min-width: unset;
   }
-  .info__title {
+  .info__title,
+  .track__title {
     font-size: 25px;
+  }
+  .track__title {
+    padding-top: 25px;
   }
   .info__part {
     padding-top: 50px;
+  }
+  .info {
+    margin-bottom: 50px;
   }
 }
