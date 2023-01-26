@@ -55,6 +55,11 @@ body {
   justify-content: space-between;
 }
 
+.menu-mobile,
+.menu-btn {
+  display: none;
+}
+
 .menu-list {
   display: flex;
   gap: 0 40px;
@@ -500,3 +505,113 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1400px) {
+  .promo {
+    background-position: left center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  .nav {
+    align-items: center;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 38px;
+  }
+  .subtitle span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 820px) {
+  .promo {
+    background-position: top;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 32px;
+  }
+  .subtitle span {
+    font-size: 25px;
+  }
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-mobile.menu--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding-top: 140px;
+  }
+  .menu-link {
+    color: #fff;
+    display: block;
+    font-size: 3vh;
+    padding: 20px 0;
+  }
+  .logo-header {
+    z-index: 10;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 27px;
+  }
+  .subtitle span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .subtitle span {
+    font-size: 20px;
+  }
+}
